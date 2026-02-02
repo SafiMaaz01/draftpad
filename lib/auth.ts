@@ -1,11 +1,11 @@
-import { betterAuth } from "better-auth";
-import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import PasswordResetEmail from "@/components/emails/reset-email";
+import VerificationEmail from "@/components/emails/verification-emai";
 import { db } from "@/db/db";
 import { schema } from "@/db/schema";
+import { betterAuth } from "better-auth";
+import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { nextCookies } from "better-auth/next-js";
 import { Resend } from "resend";
-import VerificationEmail from "@/components/emails/verification-emai";
-import PasswordResetEmail from "@/components/emails/reset-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

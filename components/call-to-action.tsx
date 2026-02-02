@@ -17,14 +17,8 @@ export default function CallToAction() {
 
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="/">
+              <Link href="/dashboard">
                 <span>Start Writing</span>
-              </Link>
-            </Button>
-
-            <Button asChild size="lg" variant="outline">
-              <Link href="/">
-                <span>See it in action</span>
               </Link>
             </Button>
           </div>

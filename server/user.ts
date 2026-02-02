@@ -26,7 +26,7 @@ export const signUpUser = async (
   try {
     await auth.api.signUpEmail({
       body: {
-        email, // ✅ string (correct for your version)
+        email,
         password,
         name,
       },
